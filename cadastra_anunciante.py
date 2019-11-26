@@ -23,10 +23,10 @@ def test_all():
 	p = 'P@ssw0rd!'
 	driver = webdriver.Chrome(executable_path='/home/wellington/Documentos/v3/automatiza/chromedriver')
 	
-	driver.get('http://0.0.0.0:8081/advertiser/create')
-	time.sleep(4)
+	driver.get('http://homolog.dashboard.afi.vc/advertiser/create')
+	time.sleep(5)
 	title = driver.title
-	print title, len(title)
+	print title
 
 	login = driver.find_element_by_id('login')
 	login.click()
@@ -102,7 +102,7 @@ def test_all():
 	time.sleep(2)
 	email_comercial = driver.find_element_by_id('emailComercial')
 	email_comercial.click()
-	email_comercial.send_keys(faker.email())
+	email_comercial.send_keys(faker.ascii_free_email())
 
 	time.sleep(1)
 	telefone_comercial = driver.find_element_by_id('telefoneComercial')
@@ -181,7 +181,7 @@ def test_all():
 	time.sleep(1)
 	email1 = driver.find_element_by_id('email1')
 	email1.click()
-	email1.send_keys(faker.email())
+	email1.send_keys(faker.ascii_free_email())
 
 	time.sleep(1)
 	driver.find_elements_by_tag_name("button")[2].click()
@@ -190,7 +190,7 @@ def test_all():
 	time.sleep(1)
 	email_acesso = driver.find_element_by_id('emailAcesso')
 	email_acesso.click()
-	email_acesso.send_keys(faker.email())
+	email_acesso.send_keys(faker.ascii_free_email())
 
 	time.sleep(1)
 	driver.find_elements_by_tag_name("button")[2].click()
