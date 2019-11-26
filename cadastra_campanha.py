@@ -19,8 +19,8 @@ class bcolors:
     UNDERLINE = '\033[4m'
 
 def test_all():
-	l = 'admin@afil.io'
-	p = 'P@ssw0rd!'
+	l = '#'
+	p = '#'
 	driver = webdriver.Chrome(executable_path='/home/wellington/Documentos/v3/automatiza/chromedriver')
 	driver.get('http://0.0.0.0:8081/campaign/create')
 	title = driver.title
