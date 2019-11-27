@@ -20,7 +20,7 @@ sudo apt install python-pip
 pip install selenium
 ```
 
--Faker
+- Faker
 ```
 
 pip install faker
