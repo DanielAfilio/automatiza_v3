@@ -1,4 +1,4 @@
-#Automatização V3 - Teste Unitário
+# Automatização V3 - Teste Unitário
 
 Script para rodar teste unitário no ambiente local/homolog
 
