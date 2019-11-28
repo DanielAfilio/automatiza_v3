@@ -66,3 +66,9 @@ python "nomedoscript.py"
 * Na primeira execução o script pode travar pois será a primeira vez abrindo o browser. Apenas feche o browser e rode o script novamente no terminal
 * Para acompanhar o status da execução dos testes deixe o terminal aberto pois o mesmo retorna sucesso/erro
 * A url pode ser alterada de homolog/local na instância driver.get() no início do arquivo.
+
+
+## Caso de erro com o DOCKER
+
+* Possivel erro com o Docker pode ser gerado depois da instalaço do Python. Caso isso ocorra colocar no terminal:
+> pip install requests
